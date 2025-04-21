@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Contato</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="currículo.html">Currículo</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Formulário de Contato</h1>
+    <p>Preencha o formulário abaixo e entraremos em contato.</p>
+    <form action="#" method="post">
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+      <label for="tipo">Tipo de Pessoa:</label>
+      <select id="tipo" name="tipo" required>
+        <option value="fisica">Pessoa Física</option>
+        <option value="juridica">Pessoa Jurídica</option>
+      </select>
+      <label for="horario">Melhor horário para contato:</label>
+      <input type="time" id="horario" name="horario" required>
+      <label for="servico">Tipo de Serviço:</label>
+      <select id="servico" name="servico" required>
+        <option value="desenvolvimento">Desenvolvimento de Sites</option>   
+        <option value="outro">Outro</option>
+      </select>
+      <label for="descricao">Descrição do que deseja contratar:</label>
+      <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o que deseja contratar" required></textarea>
+      <label for="consentimento">
+        <input type="checkbox" id="consentimento" name="consentimento" required>
+        Aceito receber uma proposta de serviço
+      </label>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+</body>
+</html>
